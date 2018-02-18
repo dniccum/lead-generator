@@ -28,6 +28,21 @@ module.exports = function(grunt) {
         cwd: './assets',
         src: ['**/*.!(coffee|less)'],
         dest: '.tmp/public'
+      }, {
+        cwd: './node_modules/angular',
+        src: 'angular.min.js',
+        dest: '.tmp/public/js/dependencies',
+        expand: true
+      }, {
+        cwd: './node_modules/izitoast/dist/js',
+        src: 'iziToast.min.js',
+        dest: '.tmp/public/js/dependencies',
+        expand: true
+      }, {
+        cwd: './node_modules/izitoast/dist/css',
+        src: 'iziToast.min.css',
+        dest: '.tmp/public/styles',
+        expand: true
       }]
     },
     build: {
