@@ -34,6 +34,12 @@ module.exports.policies = {
   * and its actions                                                          *
   *                                                                          *
   ***************************************************************************/
+  AdvertisersController: {
+    getAdvertisers: ['jsonOnly', 'apiKeyAuth']
+  },
+  LeadController: {
+    getAvailableLeads: ['jsonOnly', 'apiKeyAuth']
+  }
 	// RabbitController: {
 
 		// Apply the `false` policy as the default for all of RabbitController's actions
