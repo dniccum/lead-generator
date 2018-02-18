@@ -15,12 +15,22 @@ module.exports = {
             return res.badRequest('Please include parameters for your request');
         }
 
+        var validRequest = ValidationService.validateRequestParameters(type, location);
+
+        if (!validRequest.valid) {
+            return res.badRequest(validRequest.message);
+        }
+
         var results = FeedService.queryFeedData(type, location);
 
-        return res.ok({
-            message: 'Results successfully returned',
-            results: results
-        });
+        if (typeof results === 'string') {
+            return res.badRequest(results);
+        } else {
+            return res.ok({
+                message: 'Results successfully returned',
+                results: results
+            });
+        }
 
     }
 
