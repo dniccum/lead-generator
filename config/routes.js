@@ -25,6 +25,10 @@ module.exports.routes = {
   'GET /': 'LeadController.home',
 
   // AJAX routes
-  'POST /ajax/lead': 'LeadController.createLead'
+  'POST /ajax/lead': 'LeadController.createLead',
+
+  // Web service routes
+  'GET /api/leads': 'LeadController.getAvailableLeads',
+  'GET /api/advertisers': 'AdvertisersController.getAdvertisers'
 
 };
