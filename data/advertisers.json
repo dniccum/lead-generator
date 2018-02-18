@@ -1,0 +1,62 @@
+[
+  {
+    "ads": [
+      {
+        "description": "It's good for your health",
+        "title": "Buy some Insurance"
+      }
+    ],
+    "advertiser": 456,
+    "types": [
+      "health",
+      "home"
+    ],
+    "zips": [
+      "41018"
+    ],
+    "bid": 2.50
+  },
+  {
+    "ads": [
+      {
+        "description": "It's good and it's cheap",
+        "title": "Buy our Insurance"
+      }
+    ],
+    "advertiser": 123,
+    "types": [
+      "home",
+      "health",
+      "auto",
+      "life"
+    ],
+    "zips": [
+      "64108",
+      "66212",
+      "66062",
+      "41018"
+    ],
+    "bid": 3.00
+  },
+  {
+    "ads": [
+      {
+        "description": "It's good and it's cheap",
+        "title": "Buy home Insurance"
+      }
+    ],
+    "advertiser": 789,
+    "types": [
+      "home",
+      "health",
+      "auto"
+    ],
+    "zips": [
+      "64108",
+      "66212",
+      "66062",
+      "41018"
+    ],
+    "bid": 1.25
+  }
+]
