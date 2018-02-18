@@ -1,7 +1,7 @@
 {
   "name": "lead-generator",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
@@ -39,6 +39,6 @@
     "type": "git",
     "url": "git://github.com/dgniccum/lead-generator.git"
   },
-  "author": "dougniccum",
-  "license": ""
+  "author": "Doug Niccum",
+  "license": "MIT"
 }
