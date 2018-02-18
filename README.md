@@ -12,6 +12,7 @@ This is a basic [Sails](http://sailsjs.org) (NodeJS) application that keeps trac
 1. Clone the repository
 2. Install the application dependencies using NPM (`npm install`) or Yarn (`yarn`)
 3. Start the application using `node app.js`
+4. Assuming you hae SQLite installed, the database will be created and migrated automatically
 
 ## Advertiser web service
 
