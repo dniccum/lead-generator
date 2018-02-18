@@ -49,6 +49,12 @@ module.exports = {
                 lead: newLead
             });
         });
+    },
+
+    getAvailableLeads: function(req, res) {
+        Lead.find({}).exec(function(error, results) {
+            return res.ok(results);
+        });
     }
 };
 
