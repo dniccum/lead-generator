@@ -11,8 +11,7 @@ module.exports = {
     // model definitions
     type: {
       type: 'string',
-      required: true,
-      enum: ['home', 'health', 'auto', 'life']
+      required: true
     },
     zipCode: {
       type: 'string',
@@ -34,8 +33,7 @@ module.exports = {
   },
   validationMessages: {
     type: {
-      required: "Please indicate the type of lead this is.",
-      enum: 'Please select "home, health, auto," or "life."'
+      required: "Please indicate the type of lead this is."
     },
     zipCode: {
       required: "Please include a zip code for this lead.",
