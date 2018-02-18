@@ -54,8 +54,6 @@ module.exports = {
                         return object;
                     }
                 });
-            } else {
-                return 'Please provide either a string, or a valid string array for the advertisement "Type"';
             }
         }
 
@@ -73,8 +71,6 @@ module.exports = {
                         return object;
                     }
                 });
-            } else {
-                return 'Please provide either a string, or a valid string array for the advertisement "Zip"';
             }
         }
 
