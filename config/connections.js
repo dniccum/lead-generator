@@ -33,6 +33,17 @@ module.exports.connections = {
   },
 
   /***************************************************************************
+   *                                                                          *
+   * Sqlite                                                                   *
+   *                                                                          *
+   ***************************************************************************/
+  sqlitedb: {
+      adapter: 'waterline-sqlite3',
+      filename: './tmp/db.sqlite',
+      debug: false
+  }
+
+  /***************************************************************************
   *                                                                          *
   * MySQL is the world's most popular relational database.                   *
   * http://en.wikipedia.org/wiki/MySQL                                       *
